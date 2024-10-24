@@ -25,7 +25,7 @@ const MusicStudioForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://singhmusix-web.onrender.com", {
+      const response = await fetch("https://singhmusix-web.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
