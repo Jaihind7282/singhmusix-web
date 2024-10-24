@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Julius Sans One", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.home-image {
+  display: block;
+  width: 100%;
+}
+
+.content-on-image {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+}
+
+.content-on-image h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: rgb(217, 220, 220);
+  display: block;
+  text-align: center;
+  padding: 10px 0 !important;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  color: #000000;
+  padding: 0 10px;
+}
+.icon:hover {
+  color: #007bff;
+}
+.text-on-image-2 {
+  display: none;
+}
+.service-details {
+  margin: 50px 10vw;
+  text-align: center;
+}
+.recording-service {
+  display: flex;
+  justify-content: space-evenly;
+}
+.record-image {
+  width: 30%;
+  border-radius: 10%;
+}
+.record-content {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.button-on-image {
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  color: #ffffff;
+  background-color: #007bff;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  padding: 1px 1px;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-on-image:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.about-container-2 {
+  text-align: center;
+  padding: 10rem;
+}
+
+.form-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  width: 360px;
+  margin: auto;
+  display: block;
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 8px 30px;
+  margin: 30px 0;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #000000;
+}
+
+.register-container {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 20vh;
+}
+
+.thanku-container {
+  display: block;
+  text-align: center;
+  margin: 15rem 0;
+}
+
+.homepage-details {
+  display: none;
+  margin: 2rem auto;
+  padding: 1px 1px;
+  width: 85%;
+  text-align: center;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.homepage-details:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+}
+.recording-service {
+  margin: 2rem auto;
+  padding: 1px 1px;
+  width: 100%;
+  background-color: #eaeaea;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.recording-service:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+}
+.recording-service p {
+  width: 95%;
+  margin: 1rem auto;
+  color: #424243;
+}
+h4,
+h5 {
+  color: #568bff;
+}
+.on-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .content-on-image {
+    color: rgb(241, 241, 241);
+    width: 90%;
+    padding: 1px;
+  }
+  .content-on-image h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+  }
+  .content-on-image p {
+    font-size: 0.5rem;
+  }
+  .text-on-image {
+    display: none;
+  }
+  .homepage-details {
+    display: block;
+    margin: 30px;
+    text-align: center;
+  }
+  .recording-service {
+    display: block;
+  }
+  .record-image {
+    width: 100%;
+    padding: 0px;
+  }
+  .record-content {
+    width: 100%;
+    padding: 0px;
+  }
+  .button-on-image {
+    font-size: 0.5rem;
+    max-width: 120px;
+  }
+  .about-container-2 {
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 20px;
+  }
+  input,
+  textarea {
+    width: 250px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .on-desktop {
+    display: none;
+  }
+  .on-mobile {
+    display: block;
+  }
+}

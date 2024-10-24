@@ -1,0 +1,118 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0 10vw;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.9);
+  height: 5rem;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 15px;
+  list-style: none;
+  align-items: center;
+}
+.logo {
+  width: 10rem;
+  transition: all 0.4s ease-in-out;
+}
+.logo:hover {
+  width: 10.3rem;
+}
+.nav-links {
+  text-decoration: none;
+  color: #242627;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  background-color: #242627;
+  color: white;
+}
+
+.menu-icons {
+  display: none;
+}
+.button-on-navbar {
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  color: #ffffff;
+  background-color: #007bff;
+  margin: 0 auto;
+  font-size: 0.5rem;
+  padding: 0.1rem 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-on-navbar:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 850px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 20px 0 3rem 0px;
+    margin-top: 80px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 50px 0;
+  }
+  .nav-menu.active {
+    left: -10%;
+    opacity: 1;
+  }
+
+  .nav-links {
+    display: block;
+    padding-left: 100px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    transition: none;
+  }
+  .nav-links:hover {
+    border-radius: 0%;
+  }
+  .logo {
+    width: 8rem;
+  }
+  .menu-icons {
+    display: block;
+  }
+  .menu-icons i {
+    font-size: 1.3rem;
+    color: black;
+  }
+  .button-on-navbar {
+    margin-top: 20px;
+  }
+}
